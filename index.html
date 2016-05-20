@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Multiple Human Identification and Cosegmentation by hongyuanzhu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Multiple Human Identification and Cosegmentation</h1>
+      <h2 class="project-tagline">MHIC</h2>
+      <a href="https://github.com/hongyuanzhu/mhic" class="btn">View on GitHub</a>
+      <a href="https://github.com/hongyuanzhu/mhic/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/hongyuanzhu/mhic/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-our-project-page" class="anchor" href="#welcome-to-our-project-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to our project page.</h3>
+
+<p>Localizing, identifying and extracting humans with consistent appearance jointly from a personal photo stream is an  important  problem  and  has  wide  applications.  The  strong variations in foreground and background and irregularly occur-ring foreground humans make this realistic problem challenging.Inspired by the advance in object detection, scene understanding and image  cosegmentation,  in this paper we explore explicit constraints to label and segment human objects rather than other non-human  objects  and  “stuff”.  We  refer  to  such  a  problem  as Multiple Human Identification and Cosegmentation (MHIC). To identify specific human subjects, we propose an efficient human instance detector by combining an extended color line model with a poselet-based human detector. Moreover, to capture high level human shape information, a novel soft shape cue is proposed. It is initialized by the human detector, then further enhanced through a generalized geodesic distance transform, and refined finally with a joint bilateral filter. We also propose to capture the rich feature context  around  each  pixel  by  using  an  adaptive  cross  region data  structure,  which  gives  a  higher  discriminative  power  than a  single  pixel-based  estimation.  The  high-level  object  cues  from the detector and the shape are then integrated with the low-level pixel cues and mid-level contour cues into a principled conditional random  field  (CRF)  framework,  which  can  be  efficiently  solved by  using  fast  graph  cut  algorithms.  We  evaluate  our  method over a newly created NTU-MHIC human dataset, which contains 351 images with manually annotated ground-truth segmentation.Both visual and quantitative results demonstrate that our method achieves state-of-the-art performance for the MHIC task</p>
+
+<p>We introduce the first and the largest multiple human foreground cosegmentation and identification dataset – the NTU-MHIC dataset. In fact, till now there exists no benchmark dataset to evaluate a method’s performance for the MHIC task. The FlickrMFC dataset [a] contains some subsets with human classes, but some of them are not so challenging for the MHIC task. In addition, other object classes are also mixed with the human classes in this dataset. The CoDel dataset [b] is intended for a multiple foreground human detection task by sampling representative video frames in “Big Bang Theory”, but it only comes with bounding box labels. As one of our main contributions, we create a new dataset by collecting image subsets which match the MHIC scenario from both the FlickrMFC and CoDel datasets. We manually annotate the images with pixel wise class labels, which serve as the ground-truth to evaluate various MHIC algorithms. We also provide annotation tools to facilitate further research from Co-authors' website.</p>
+
+<h3>
+<a id="citation" class="anchor" href="#citation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Citation</h3>
+
+<p>Please cite the following publication if you used or was inspired by our dataset/work:</p>
+
+<p>[1] Hongyuan Zhu, Jiangbo Lu, Jianfei Cai, Jianmin Zheng, Shijian Lu, Nadia Magnenat-Thalmann: Multiple Human Identification and Cosegmentation: A Human-Oriented CRF Approach with Poselets, IEEE Transaction on Multimedia, 2016</p>
+
+<p>[2] Hongyuan Zhu, Jiangbo Lu, Jianfei Cai, Jianmin Zheng, Nadia Magnenat-Thalmann: Poselet-based multiple human identification and cosegmentation. ICIP 2014</p>
+
+<p>[3] Hongyuan Zhu, Jiangbo Lu, Jianfei Cai, Jianmin Zheng, Nadia Magnenat-Thalmann: Multiple foreground recognition and cosegmentation: An object-oriented CRF model with robust higher-order potentials. WACV 2014</p>
+
+<p>[4] Hongyuan Zhu, Fanman Meng, Jianfei Cai, Shijian Lu: Beyond pixels: A comprehensive survey from bottom-up to semantic image segmentation and cosegmentation. J. Visual Communication and Image Representation 34: 12-27 (2016)</p>
+
+<h3>
+<a id="related-references" class="anchor" href="#related-references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related References:</h3>
+
+<p>[a] Gunhee Kim, Eric P. Xing: On multiple foreground cosegmentation. CVPR 2012</p>
+
+<p>[b] Jianping Shi, Renjie Liao and Jiaya Jia CoDeL: An Human Co-detection and Labeling Framework, ICCV 2013</p>
+
+<h3>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact:</h3>
+
+<p>Hongyuan Zhu (zhuh at i2r.a-star.edu.sg)</p>
+
+<p>Jiangbo Lu  (Jiangbo.Lu at adsc.com.sg) <a href="https://sites.google.com/site/jiangbolu/">https://sites.google.com/site/jiangbolu/</a></p>
+
+<p>Jianfei Cai (ASJFCai at ntu.edu.sg) <a href="http://www.ntu.edu.sg/home/asjfcai/">http://www.ntu.edu.sg/home/asjfcai/</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/hongyuanzhu/mhic">Multiple Human Identification and Cosegmentation</a> is maintained by <a href="https://github.com/hongyuanzhu">hongyuanzhu</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
